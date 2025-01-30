@@ -1,0 +1,354 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.stats-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.stat-item {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.stat-item p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4caf50;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Center the buy book page content */
+.buy-book-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.book-list {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Book Card Layout */
+.book-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-card p {
+  margin: 0.5rem 0;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.book-card:hover .delete-button {
+  opacity: 1;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Check-in Button Styling */
+.checkout-btn {
+  display: block;
+  padding: 8px 16px; /* Smaller padding */
+  font-size: 1rem; /* Smaller font size */
+  width: auto; /* Adjust width to content */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px; /* Adjusted margin */
+  transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+}
+
+form label {
+  align-self: flex-start;
+  font-size: 1rem;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Book Item Styling */
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.book-item span {
+  flex: 1;
+  text-align: center;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+.buy-button-green {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-button-green:hover {
+  background-color: darkgreen;
+}
+
+/* Center the login form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style the login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Style the message */
+.message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Style input fields */
+.login-input {
+  padding: 10px;
+  width: 280px; /* Adjust width to match the button */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Style buttons */
+.login-button {
+  padding: 10px;
+  width: 280px; /* Ensure the width matches input fields */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the signup text */
+.signup-text {
+  margin: 10px 0 0;
+}
+
+/* Style the signup button */
+.signup-button {
+  padding: 10px;
+  width: 280px; /* Ensure consistency in width */
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
+
+/* Center the signup form */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style the signup form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Style the message */
+.message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Style input fields */
+.signup-input {
+  padding: 10px;
+  width: 280px; /* Ensures input fields match button width */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Style the signup button */
+.signup-button {
+  padding: 10px;
+  width: 280px; /* Ensure consistency with input fields */
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
